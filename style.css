@@ -1,0 +1,244 @@
+/* ---- General ---- */
+
+body {
+    background-color: rgb(241, 241, 241);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+}
+
+/* ---- Back to top ---- */
+
+#back-to-top > button{
+    background-color: rgb(198, 156, 78);
+    border-radius: 50%;
+    border: solid 1px rgb(198, 156, 78);
+    width: 50px;
+    height: 50px;
+}
+#back-to-top:hover > button {
+    border: solid 1px rgb(198, 156, 78);
+    background-color: white;
+    
+}
+#back-to-top > button {
+    text-decoration: none;
+    color: whitesmoke;
+}
+#back-to-top:hover > button {
+    text-decoration: none;
+    color: rgb(198, 156, 78);
+}
+
+/* ---- Nav --- */
+
+#navbar {
+    background-color: rgb(23, 23, 23);
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+.nav-link {
+    text-decoration: none;
+    color:white;
+    margin: 0 4vw;
+}
+
+.nav-link:hover {
+    color: rgb(219, 191, 63);
+    text-decoration: none;
+}
+button:hover {
+    background-color: rgb(219, 191, 63);
+    text-decoration: none;
+}
+
+
+
+/* ---- header ----- */
+
+#top {
+    display: flex;
+    background-color: rgb(47, 50, 60);
+    color: whitesmoke;
+    padding: 2rem;
+    padding-bottom: 4rem;
+    height: 25vh;
+}
+.header-content {
+    padding: 3rem;
+}
+#header-image {
+    border-radius: 10%;
+    width: 300px;
+    height: 225px;
+}
+
+/* ---- Content ----- */
+
+main {
+    margin-top: 10rem;
+}
+
+.service {
+    padding: 2rem;
+    display: flex;
+    margin: 2rem;
+    
+}
+.service:nth-child(even) {
+    background-color: rgb(46, 67, 112);
+    color: whitesmoke;
+}
+.service h3 {
+    padding: 1rem;
+    padding-right: 3rem;
+}
+
+/* ---- About ----- */
+
+#about {
+    margin-top: 4rem;
+    
+}
+
+#about-content {
+    padding: 0 15vw;
+}
+
+#footer {
+    margin-top: 4rem;
+    background-color: rgb(23, 23, 23);
+    color: whitesmoke;
+    text-align: center;
+    padding: 2rem;
+}
+h4{
+    font-size: 25px;
+}
+h5{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.hero-image{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("Me.jpg");
+    height: 215vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.hero-text{
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+
+/* ---- Mobile ----- */
+
+@media screen and (max-width:425px){
+    
+    #navbar{
+        width: 25%;
+    }
+    .hero-image{
+        width: 53rem;
+    }
+    .h1{
+        font-size: 1em;
+    }
+    .p{
+        font-size: 1em;
+    }
+    #top{
+        width: 187%;
+        padding: 2rem;
+    }
+    #header-image{
+        width: 150px;
+        height: 123px;
+    }
+    .article-service{
+        padding: 2rem;
+        margin: 2rem;
+    }
+    #footer{
+        margin-top: 4rem;
+        padding: 2rem;
+        width: 187%;
+    }
+}
+
+/* ---- Tablet ----- */
+
+@media screen and (max-width:768px){
+    
+    #navbar{
+        width: 50%;
+    }
+    .hero-image{
+        width: 60rem;
+    }
+    .h1{
+        font-size: 1.5em;
+    }
+    .p{
+        font-size: 1.5em;
+    }
+    #top{
+        width: 187%;
+        padding: 0.6rem;
+    }
+    #header-image{
+        width: 100px;
+        height: 100px;
+    }
+    .article-service{
+        padding: 1rem;
+        margin: 1rem;
+    }
+    #footer{
+        margin-top: 4rem;
+        padding: 2rem;
+        width: 180%;
+    }
+}
+
+/* ---- 4k ----- */
+
+@media screen and (max-width:768px){
+    
+    #navbar{
+        width: 75%;
+    }
+    .hero-image{
+        width: 75rem;
+    }
+    .h1{
+        font-size: 2em;
+    }
+    .p{
+        font-size: 2em;
+    }
+    #top{
+        width: 187%;
+        padding: 1rem;
+    }
+    #header-image{
+        width: 400px;
+        height: 300px;
+    }
+    .article-service{
+        padding: 1rem;
+        margin: 1rem;
+    }
+    #footer{
+        margin-top: 4rem;
+        padding: 2rem;
+        width: 180%;
+    }
+}
